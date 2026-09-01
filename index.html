@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acara 2 - Bootstrap </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        main {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kota Salatiga</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-house"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deskripsi">
+                                <i class="bi bi-journal-text"></i> Deskripsi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penduduk">
+                                <i class="bi bi-people-fill"></i> Penduduk
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kecamatan">
+                                <i class="bi bi-list-ol"></i> Kecamatan
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#website">
+                                <i class="bi bi-globe2"></i> Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeri">
+                                <i class="bi bi-camera-fill"></i> Galeri
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ks">
+                                <i class="bi bi-pencil-fill"></i> Kritik & Saran
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#peta">
+                                <i class="bi bi-globe-asia-australia-fill"></i> Peta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                <i class="bi bi-info-square-fill"></i> Info
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Title -->
+        <div class="alert alert-warning shadow text-center" role="alert">
+            <h1>Kota Salatiga</h1>
+            <h3>Jawa Tengah</h3>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="card shadow" id="deskripsi">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-journal-text"></i> Deskripsi
+                </h4>
+            </div>
+            <div class="card-body">
+                <p style="text-align: justify;"> Kota Salatiga (bahasa Jawa: Hanacaraka: ꦯꦭꦠꦶꦒ, Pegon: سالاتيڮا,
+                    translit. Sålåtigå, pengucapan
+                    bahasa Jawa:
+                    [sɔlɔˈt̪igɔ]) adalah kota di Provinsi Jawa Tengah, Indonesia, yang menjadi enklave dari Kabupaten
+                    Semarang.
+                    Kota Salatiga terletak 49 kilometer di sebelah Selatan Kota Semarang dan 52 kilometer di sebelah
+                    Utara Kota
+                    Surakarta, serta berada di jalan nasional yang menghubungkan antara Kabupaten Semarang dengan Kota
+                    Surakarta. Jumlah penduduk kota Salatiga hingga semester pertama tahun 2025 berjumlah 199.350 jiwa.
+                </p>
+
+                <p style="text-align: justify;"> Wilayah Salatiga menempati letak posisi yang sangat strategis karena
+                    berada pada persilangan jalan
+                    raya dari
+                    enam jurusan, yaitu Semarang, Bringin, Sragen, Surakarta, Magelang, dan Ambarawa. Pada saat ini,
+                    Salatiga
+                    terdiri atas empat kecamatan (Argomulyo, Sidomukti, Sidorejo, dan Tingkir) dan 23 kelurahan
+                    (Blotongan,
+                    Bugel, Cebongan, Dukuh, Gendongan, Kalibening, Kalicacing, Kauman Kidul, Kecandran, Kumpulrejo,
+                    Kutowinangun
+                    Kidul, Kutowinangun Lor, Ledok, Mangunsari, Noborejo, Pulutan, Randuacir, Salatiga, Sidorejo Kidul,
+                    Sidorejo
+                    Lor, Tegalrejo, Tingkir Lor, dan Tingkir Tengah).
+                </p>
+            </div>
+        </div>
+
+        <!-- Penduduk -->
+        <div class="card shadow mt-3" id="penduduk">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-people-fill"></i> Penduduk
+                </h4>
+            </div>
+            <div class="card-body">
+                <!-- Table -->
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <th>No</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Jumlah</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Laki-laki</td>
+                        <td>89.928</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Perempuan</td>
+                        <td>93.887</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jumlah</td>
+                        <td>183.815</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Kecamatan -->
+        <div class="card shadow mt-3" id="kecamatan">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-list-ol"></i> Kecamatan
+                </h4>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Argomulyo</li>
+                    <li>Sidorejo</li>
+                    <li>Tingkir</li>
+                    <li>Sidomukti</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Website -->
+        <div class="card shadow mt-3" id="website">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-globe2"></i> Website
+                </h4>
+            </div>
+            <div class="card-body">
+                <a href="https://salatiga.go.id" target="_blank">https://salatiga.go.id
+                </a>
+            </div>
+        </div>
+
+        <!-- Galeri -->
+        <div class="card shadow mt-3" id="galeri">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-camera-fill"></i> Galeri
+                </h4>
+            </div>
+            <div class="card-body d-flex align-items-start gap-2">
+                <img src="https://www.uksw.edu/wp-content/uploads/2025/06/image-2-scaled.jpg" width="500" height="300">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/b3iBvnjKjEI?si=nyLiEBOF2kH77jbP"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Kritik & Saran -->
+        <div class="card shadow mt-3" id="ks">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-pencil-fill"></i> Kritik & Saran
+                </h4>
+            </div>
+            <div class="card-body">
+                <form action="#" method="post">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="pesan">Kritik dan Saran:</label>
+                    <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea>
+                    <br><br>
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+        </div>
+
+        <!-- Kritik & Saran -->
+        <div class="card shadow mt-3" id="peta">
+            <div class="card-header">
+                <h4>
+                    <i class="bi bi-globe-asia-australia-fill"></i> Peta
+                </h4>
+            </div>
+            <div class="card-body">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39819.786973755465!2d110.47644294902712!3d-7.326253129686833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a787e692c9c69%3A0xf6a53e23a0c4462c!2sSalatiga%2C%20Salatiga%20City%2C%20Central%20Java!5e1!3m2!1sen!2sid!4v1787565614383!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-dark table-striped">
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>Putra Immanuel Eka Prabowo</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>:</td>
+                            <td>25/568122/SV/27368</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>:</td>
+                            <td>A</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
